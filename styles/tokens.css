@@ -1,0 +1,28 @@
+:root {
+  --background: 58 38% 94%;
+  --foreground: 27 18% 24%;
+  --card: 50 45% 97%;
+  --card-foreground: 27 18% 24%;
+  --neutral: 60 56% 91%;
+  --neutral-foreground: 27 18% 24%;
+  --primary: 75 26% 48%;
+  --primary-foreground: 60 56% 96%;
+  --secondary: 27 18% 24%;
+  --secondary-foreground: 60 56% 91%;
+  --tertiary: 18 45% 57%;
+  --tertiary-foreground: 60 56% 96%;
+  --muted: 54 26% 87%;
+  --muted-foreground: 28 12% 38%;
+  --accent: 72 44% 82%;
+  --accent-foreground: 78 27% 26%;
+  --success: 84 21% 37%;
+  --success-foreground: 60 56% 96%;
+  --warning: 18 32% 50%;
+  --warning-foreground: 60 56% 96%;
+  --danger: 8 33% 47%;
+  --danger-foreground: 60 56% 96%;
+  --border: 48 23% 78%;
+  --input: 48 23% 78%;
+  --ring: 75 26% 48%;
+  --radius: 1.25rem;
+}

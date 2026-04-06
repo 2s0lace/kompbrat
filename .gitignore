@@ -1,1 +1,13 @@
-
+.next
+node_modules
+out
+dist
+.turbo
+tsconfig.tsbuildinfo
+.env.local
+.env*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
