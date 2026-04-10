@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 
+import { BuilderHero } from "@/components/builder/builder-hero";
 import { BuilderWorkspace } from "@/components/builder/builder-workspace";
-import { PageShell } from "@/components/layout/page-shell";
-import { builderCopy } from "@/content/copy/builder";
 
 export const metadata: Metadata = {
   title: "Dobierz komputer z Bratem",
@@ -11,12 +10,11 @@ export const metadata: Metadata = {
 
 export default function BuilderPage() {
   return (
-    <PageShell
-      title={builderCopy.title}
-      description={builderCopy.description}
-      eyebrow="Builder KOMPBRAT"
-    >
-      <BuilderWorkspace />
-    </PageShell>
+    <>
+      <BuilderHero />
+      <div className="container-shell pb-16 sm:pb-20 lg:pb-24">
+        <BuilderWorkspace />
+      </div>
+    </>
   );
 }
