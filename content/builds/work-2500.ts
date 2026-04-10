@@ -1,8 +1,8 @@
-import type { Build } from "@/types/build";
+import type { LegacyBuild } from "@/types/build";
 import { buildAllegroLink } from "@/lib/affiliate/allegro";
 import { buildCeneoLink } from "@/lib/affiliate/ceneo";
 
-const work2500: Build = {
+const work2500: LegacyBuild = {
   slug: "work-2500",
   title: "Zestaw do pracy i nauki do 2500 zł",
   price: 2499,

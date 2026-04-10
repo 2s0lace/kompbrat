@@ -1,1 +1,12 @@
-export type { Build, BuildCategory, BuildLink, BuildParts, BuildSourceType } from "@/types/build";
+export type {
+  Build,
+  BuildCategory,
+  BuildLink,
+  BuildSourceType,
+  BuildSpec,
+  BuildStatus,
+  LegacyBuild,
+  LegacyBuildCategory,
+  LegacyBuildParts,
+  LegacyBuildSourceType,
+} from "@/types/build";

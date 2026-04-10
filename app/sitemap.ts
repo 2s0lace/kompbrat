@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     })),
     ...allBuilds.map((build) => ({
-      url: `${SITE_URL}/builds/${build.slug}`,
+      url: `${SITE_URL}/builds/${build.id}`,
       lastModified: new Date(),
     })),
   ];

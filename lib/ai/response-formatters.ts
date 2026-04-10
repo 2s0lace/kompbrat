@@ -69,11 +69,11 @@ function inferResolutionLabel(useCase: string) {
 function createNaturalBuildNameFromBuild(build: Build) {
   const budgetLabel = formatBudgetLabel(build.price);
 
-  if (build.category === "praca") {
+  if (build.category === "work") {
     return `Zestaw do pracy i nauki do ${budgetLabel}`;
   }
 
-  if (build.category === "uzywany") {
+  if (build.sourceType === "used") {
     return `Używany zestaw z mocnym GPU do ${budgetLabel}`;
   }
 
@@ -233,11 +233,11 @@ export function buildMockBuilderResponse(prompt: string, build?: Build): Builder
       sanitizeNarrationText(selectedBuild.pros[1] ?? "To jest build nastawiony na praktykę, nie na ozdobniki."),
     ],
     warnings: sanitizeStringArray(selectedBuild.cons.slice(0, 3)),
-    selectedMode: selectedBuild.sourceType === "olx-allegro" ? "used" : "new",
-    actualModeUsed: selectedBuild.sourceType === "olx-allegro" ? "used" : "new",
+    selectedMode: selectedBuild.sourceType,
+    actualModeUsed: selectedBuild.sourceType,
     feasibleInSelectedMode: true,
     recommendedFallbackMode: null,
-    recommendationMode: selectedBuild.sourceType === "olx-allegro" ? "used" : "new",
+    recommendationMode: selectedBuild.sourceType,
   };
 }
 

@@ -1,8 +1,8 @@
-import type { Build } from "@/types/build";
+import type { LegacyBuild } from "@/types/build";
 import { buildAllegroLink } from "@/lib/affiliate/allegro";
 import { buildCeneoLink } from "@/lib/affiliate/ceneo";
 
-const gaming2000: Build = {
+const gaming2000: LegacyBuild = {
   slug: "gaming-2000",
   title: "Zestaw gamingowy do 2000 zł",
   price: 1999,

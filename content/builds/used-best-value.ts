@@ -1,7 +1,7 @@
-import type { Build } from "@/types/build";
+import type { LegacyBuild } from "@/types/build";
 import { buildAllegroLink } from "@/lib/affiliate/allegro";
 
-const usedBestValue: Build = {
+const usedBestValue: LegacyBuild = {
   slug: "used-best-value",
   title: "Używany zestaw z mocnym stosunkiem ceny do wydajności",
   price: 2699,

@@ -1,8 +1,8 @@
-import type { Build } from "@/types/build";
+import type { LegacyBuild } from "@/types/build";
 import { buildAllegroLink } from "@/lib/affiliate/allegro";
 import { buildCeneoLink } from "@/lib/affiliate/ceneo";
 
-const gaming5000: Build = {
+const gaming5000: LegacyBuild = {
   slug: "gaming-5000",
   title: "Zestaw gamingowy do 5000 zł",
   price: 4999,
